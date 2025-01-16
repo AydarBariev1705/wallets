@@ -30,8 +30,6 @@ class WalletRepoABC(ABC):
         pass
 
 
-
-
 class WalletRepo(WalletRepoABC):
     def __init__(self, db: AsyncSession):
         self.db = db

@@ -3,8 +3,9 @@ from decimal import Decimal
 from sqlalchemy.ext.asyncio import AsyncSession
 from fastapi import APIRouter, Depends, HTTPException, status
 
-from app.database import get_db
+
 from app.repo import WalletRepo
+from app.database import get_db
 from app.enums import OperationType
 from app.services import WalletService
 from app.tasks import perform_operation
